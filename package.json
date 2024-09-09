@@ -5,13 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build": "tact --config ./tact.config.json",
+    "deploy": "tact --config ./tact.config.json --deploy"
   },
   "dependencies": {
     "@pinata/sdk": "^2.1.0",
+    "@tact-lang/compiler": "^1.4.4",
     "@tanstack/react-query": "^5.52.2",
     "@web3-react/core": "^8.2.3",
+    "base64url": "^3.0.1",
     "dayjs": "^1.11.7",
     "dotenv": "^16.4.5",
     "ethers": "^6.13.2",
@@ -19,6 +22,7 @@
     "framer-motion": "^8.5.2",
     "he": "^1.2.0",
     "pinata": "^0.4.0",
+    "qs": "^6.13.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
